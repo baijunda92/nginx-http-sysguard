@@ -1,0 +1,12 @@
+diff --git a/src/http/ngx_http_request.h b/src/http/ngx_http_request.h
+index 8b88139..79a75ad 100644
+--- a/src/http/ngx_http_request.h
++++ b/src/http/ngx_http_request.h
+@@ -501,6 +501,7 @@ struct ngx_http_request_s {
+      */
+     unsigned                          limit_conn_set:1;
+     unsigned                          limit_req_set:1;
++    unsigned                          sysguard_set:1;
+ 
+ #if 0
+     unsigned                          cacheable:1;
